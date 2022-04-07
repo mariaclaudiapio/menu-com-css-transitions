@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Dela+Gothic+One&family=Montserrat:wght@300&family=New+Rocker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Beau+Rivage&family=Comic+Neue&family=Dancing+Script&family=Pacifico&family=Quicksand:wght@300&family=Roboto:wght@300&family=Yanone+Kaffeesatz&display=swap');
 
 body {
     padding: 0;
     margin: 0;
-    color: white;
-    font-family: 'amatic sc', sans-serif;
+    color: #f7efe0;
+    font-family: 'Quicksand', sans-serif;
 }
 
 /* HEADER */
@@ -12,7 +12,7 @@ body {
 .header-wrapper {
     height: 100vh;
     width: 100%;
-    background: linear-gradient(-45deg, #050404, #2E1C2B, #4A1942, #893168);
+    background: linear-gradient(-45deg, #b53f53, #dda3af, #97ab9a, #dec08e);
     background-size: 400% 400%;
     display: flex;
     flex-direction: column;
@@ -23,7 +23,8 @@ body {
 }
 
 h1 {
-    text-transform: uppercase;
+    font-family: 'Dancing Script', cursive;
+    font-size: 48px;
     letter-spacing: 4px;
 }
 
@@ -39,10 +40,10 @@ h2 {
 
 .social-media a {
     text-decoration: none;
-    color: white;
+    color: #f7efe0;
     font-size: 24px;
     padding: 1rem 4rem;
-    border: 1px solid white;
+    border: 1px solid #f7efe0;
     min-width: 4rem;
     display: flex;
     justify-content: center;
@@ -52,7 +53,7 @@ h2 {
 
 a:hover {
     color: #2E1C2B;
-    background-color: white;
+    background-color: #f7efe0;
 }
 
 @keyframes backgroundTransition {
@@ -91,7 +92,7 @@ a:hover {
 .checkbox .trace {
     width: 50px;
     height: 2px;
-    background-color: white;
+    background-color: #f7efe0;
     position: absolute;
     border-radius: 4px;
     transition: 0.5s ease-in-out;
@@ -126,7 +127,7 @@ a:hover {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    box-shadow: 0px 0px 0px 0px white;
+    box-shadow: 0px 0px 0px 0px #f7efe0;
     z-index: -1;
     transition: 400ms ease-in 0s;
 }
@@ -149,7 +150,6 @@ a:hover {
     margin: 10px 0;
     color: #2E1C2B;
     text-decoration: none;
-    text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 40px;
 }
@@ -176,11 +176,11 @@ a:hover {
 }
 
 #toggle:checked + .checkbox {
-    background-color: white;    
+    background-color: #f7efe0;    
 }
 
 #toggle:checked ~ .menu {
-    box-shadow: 0px 0px 0px 100vmax white;
+    box-shadow: 0px 0px 0px 100vmax #f7efe0;
     z-index: 1;
 } 
 
@@ -212,17 +212,17 @@ a:hover {
     height: 300px;
     width: 400px;
     margin: 3rem 0 0;
-    background-image: url('./room.jpg');
+    background-image: url('./flores-01.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    filter: grayscale(0.5);
-    color: white;
+    filter: grayscale(0.9);
+    color: black;
     cursor: pointer;
-    transition: 0.3s;    
+    transition: 0.3s;   
 }
 
 .card-text {
@@ -239,6 +239,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     position: relative;
+    font-family: 'Yanone Kaffeesatz', sans-serif  
 }
 
 .card-wrapper::before {
@@ -247,9 +248,9 @@ a:hover {
     height: 100px;
     width: 100px;
     display: block;
-    border: 1px solid white;
+    border: 1px solid black;
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.3s;   
 }
 
 .card-wrapper h2 {
@@ -267,6 +268,10 @@ a:hover {
     font-weight: bold;
     text-transform: uppercase;
     transition: 0.3s;
+}
+
+.card:hover {
+    filter: unset;
 }
 
 .card:hover > .card-wrapper::before {
@@ -289,7 +294,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(-45deg, #050404, #2E1C2B, #4A1942, #893168);
+    background: linear-gradient(-45deg, #b53f53, #dda3af, #97ab9a, #dec08e);
     background-size: 400% 400%;
     display: flex;
     flex-direction: column;
@@ -334,5 +339,16 @@ a:hover {
     .card:hover > .card-wrapper::before {
         height: 190px;
         width: 190px;
-    } 
+    }
+    
+    .card-wrapper h2 {
+        font-size: 24px;
+    }
+
+    .card-wrapper p {
+        font-style: italic;
+    }
 }
+
+
+    
